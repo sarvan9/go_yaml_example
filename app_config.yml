@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+dbConfig:
+  host: db-host
+  username: admin
+  password: admin_pwd
+
+security:
+  sslEnabled: true
+  truststoreLocation: ./keystore
+  truststorePassword: changeit
