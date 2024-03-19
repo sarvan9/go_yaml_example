@@ -32,16 +32,16 @@ func loadConfigs() {
 }
 
 func laodServerConfig(yamlData []byte) {
-	yaml.Unmarshal(yamlData, ServerConfig)
+	yaml.Unmarshal(yamlData, &ServerConfig)
 	fmt.Println("Loaded Server Config")
 }
 
 func laodDBConfig(yamlData []byte) {
-	yaml.Unmarshal(yamlData, DbConfig)
+	yaml.Unmarshal(yamlData, &DbConfig)
 	fmt.Println("Loaded DB Config")
 }
 
 func laodSecurityConfig(yamlData []byte) {
-	yaml.Unmarshal(yamlData, SecurityConfig)
+	yaml.Unmarshal(yamlData, &SecurityConfig)
 	fmt.Println("Loaded Security Config")
 }

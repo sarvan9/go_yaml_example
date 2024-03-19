@@ -1,7 +1,7 @@
 package domain
 
 type SecurityConfigRoot struct {
-	SecurityConfig SecurityConfig `yaml: "security"`
+	SecurityConfig SecurityConfig `yaml:"security"`
 }
 
 type SecurityConfig struct {
